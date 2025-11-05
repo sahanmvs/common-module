@@ -10,6 +10,8 @@ public class InventoryUpdatedEvent {
     private int quantity;
     private Instant timestamp;
 
+    public InventoryUpdatedEvent() {}
+
     public InventoryUpdatedEvent(int quantity, String productId, Instant timestamp) {
         this.quantity = quantity;
         this.productId = productId;

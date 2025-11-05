@@ -9,6 +9,8 @@ public class ProductCreatedEvent {
     private String productId;
     private Instant timestamp;
 
+    public ProductCreatedEvent() {}
+
     public ProductCreatedEvent(Instant timestamp, String productId) {
         this.timestamp = timestamp;
         this.productId = productId;
