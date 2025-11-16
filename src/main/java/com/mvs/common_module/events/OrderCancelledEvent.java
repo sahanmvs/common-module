@@ -5,14 +5,15 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-public class StockRollbackEvent {
+public class OrderCancelledEvent {
     private String orderId;
-    private List<OrderCreatedEvent.OrderItem> items;
+    @Builder.Default
+    private List<OrderCreatedEvent.OrderItem> items = new ArrayList<>();
 }
-
