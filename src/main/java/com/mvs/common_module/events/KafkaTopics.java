@@ -8,4 +8,6 @@ public class KafkaTopics {
     public static final String STOCK_REJECTED = "stock_rejected";
     public static final String PAYMENT_SUCCESS = "payment_success";
     public static final String PAYMENT_FAILED = "payment_failed";
+    public static final String ORDER_CANCELLED = "order_cancelled";
+    public static final String ORDER_EXPIRED = "order_expired";
 }
